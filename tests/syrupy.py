@@ -23,7 +23,7 @@ class WithingsSnapshotSerializer(AmberDataSerializer):
     """
 
     @classmethod
-    def _serialize(  # pylint: disable=too-many-arguments
+    def _serialize( # pylint: disable=too-many-arguments
         cls,
         data: SerializableData,
         *,
