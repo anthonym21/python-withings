@@ -320,7 +320,7 @@ class Measurement:
         value = get_measurement_from_dict(measurement)
         position = to_enum_or_none(
             MeasurementPosition,
-            measurement["position"],
+            measurement.get("position", None),
         )
         return cls(
             measurement_type=measurement_type,

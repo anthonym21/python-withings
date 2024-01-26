@@ -29,12 +29,12 @@ def to_enum_or_none(
     enum_class: type[T],
     value: Any,
 ) -> T | None:
-    """Convert a value to an enum or None if it fails"""
+    """Convert a value to an enum or None if it fails."""
     try:
         return enum_class(value)
     except ValueError:
         return None
-    
+
 def get_measurement(value: int, unit: int) -> float:
     """Convert value and unit to real value."""
     return cast(float, value * pow(10, unit))
