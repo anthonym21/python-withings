@@ -25,6 +25,7 @@ def to_enum(
         )
         return default_value
 
+
 def to_enum_or_none(
     enum_class: type[T],
     value: Any,
@@ -35,9 +36,11 @@ def to_enum_or_none(
     except ValueError:
         return None
 
+
 def get_measurement(value: int, unit: int) -> float:
     """Convert value and unit to real value."""
     return cast(float, value * pow(10, unit))
+
 
 def get_measurement_from_dict(input_dict: dict[str, Any]) -> float:
     """Convert dict with value and unit to real value."""

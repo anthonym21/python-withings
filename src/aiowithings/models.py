@@ -169,6 +169,7 @@ class MeasurementAttribution(IntEnum):
     MEASURE_USER_CONFIRMED = 7
     GUIDED_CONDITIONS = 15
 
+
 class MeasurementPosition(IntEnum):
     """Measure positions."""
 
@@ -188,6 +189,7 @@ class MeasurementPosition(IntEnum):
     TORSO = 12
     LEFT_HAND = 13
     RIGHT_HAND = 14
+
 
 class MeasurementGroupCategory(IntEnum):
     """Measure categories."""
@@ -300,6 +302,7 @@ class MeasurementType(IntEnum):
     BIA_ERROR = 207
     BASAL_METABOLIC_RATE = 226
     METABOLIC_AGE = 227
+
 
 @dataclass(slots=True)
 class Measurement:
